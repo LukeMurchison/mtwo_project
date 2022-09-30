@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    {% if key == caracal.name %}
+        <div class="welcome">
+            <h1>The {{ key }}</h1>
+        </div>
+        <div class="big">
+            <div class="card">
+                <div class="pic">
+                    <img src="{% static 'images/caracal_thumbnail.jpg' %}"/>
+                </div>
+                <div class="card_header">
+                    <h3>{{ caracal.name }}</h3>
+                </div>
+                <div class="card_content">
+                    <p>{{ caracal.home }}</p>
+                    <p>{{ caracal.decs }}</p>
+                    <p>{{ caracal.pop }}</p>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    
+{% endblock content%}

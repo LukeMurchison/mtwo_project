@@ -1,0 +1,20 @@
+.big{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 33%;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.card_header{
+
+}
+.card_content{
+    float: right;
+}
+img{
+    height: 10em;
+    width: auto;
+}
